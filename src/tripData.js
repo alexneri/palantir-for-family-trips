@@ -1,20 +1,20 @@
-const PUBLIC_BASECAMP_LOCATION = 'Pine Mountain Lake, Groveland, CA 95321'
-const PUBLIC_BASECAMP_COORDINATES = { lat: 37.8586, lng: -120.2142 }
+const PUBLIC_BASECAMP_LOCATION = 'Marina Bay, Singapore'
+const PUBLIC_BASECAMP_COORDINATES = { lat: 1.283, lng: 103.8607 }
 
 export const TRIP_META = {
-  title: 'Pine Mountain Lake / Yosemite Weekend',
-  subtitle: 'Thu 4/09 to Sun 4/12',
-  commandName: 'Family Trip Command Center',
+  title: 'Singapore 2027',
+  subtitle: 'Tue 8/17 to Sat 8/28',
+  commandName: 'Singapore 2027 Command Center',
   airbnb: {
-    name: 'Pine Mountain Lake Basecamp',
+    name: 'Marina Bay Basecamp (hotel TBD)',
     url: null,
     manualUrl: null,
     location: PUBLIC_BASECAMP_LOCATION,
-    checkIn: 'Check-in after 4:00 PM',
+    checkIn: 'Check-in after 3:00 PM',
     checkOut: 'Check-out before 11:00 AM',
-    gateNote: 'Community access details are intentionally withheld in the sanitized demo.',
-    parkingNote: 'Parking guidance is intentionally simplified in the sanitized demo.',
-    directionsNote: 'Use the Pine Mountain Lake waypoint for planning. Exact arrival instructions are intentionally withheld.',
+    gateNote: 'Central Singapore basecamp. Swap in the real hotel once it is booked.',
+    parkingNote: 'No rental car planned; get around by MRT and Grab.',
+    directionsNote: 'Use the Marina Bay waypoint for planning until the hotel is set.',
     lockNote: null,
     wifiNetwork: null,
     wifiPassword: null,
@@ -22,7 +22,7 @@ export const TRIP_META = {
     coHostName: null,
     guestSummary: null,
     confirmationCode: null,
-    vehicleFee: 'Community access details withheld',
+    vehicleFee: 'N/A (no rental car planned)',
   },
 }
 
@@ -162,38 +162,18 @@ export const NAV_ITEMS = [
 ]
 
 export const DAYS = [
-  {
-    id: 'thu',
-    shortLabel: 'Thu 4/09',
-    title: 'Transit Day',
-    weather: 'Sunny',
-    temperature: '72 F',
-    caution: 'Low',
-  },
-  {
-    id: 'fri',
-    shortLabel: 'Fri 4/10',
-    title: 'Pine Mountain Lake',
-    weather: 'Partly Cloudy',
-    temperature: '68 F',
-    caution: 'Low',
-  },
-  {
-    id: 'sat',
-    shortLabel: 'Sat 4/11',
-    title: 'Yosemite Day',
-    weather: 'Showers',
-    temperature: '62 F',
-    caution: 'Medium',
-  },
-  {
-    id: 'sun',
-    shortLabel: 'Sun 4/12',
-    title: 'Drive Home',
-    weather: 'Sunny',
-    temperature: '75 F',
-    caution: 'Low',
-  },
+  { id: 'd01', shortLabel: 'Tue 8/17', title: 'Depart Amsterdam', weather: 'Red-eye out', temperature: 'n/a', caution: 'Low' },
+  { id: 'd02', shortLabel: 'Wed 8/18', title: 'Ingress + walk', weather: 'Humid, PM showers', temperature: '31 C', caution: 'Low' },
+  { id: 'd03', shortLabel: 'Thu 8/19', title: 'Food: Makansutra', weather: 'Hot and humid', temperature: '32 C', caution: 'Low' },
+  { id: 'd04', shortLabel: 'Fri 8/20', title: 'Gardens by the Bay', weather: 'Partly cloudy', temperature: '31 C', caution: 'Low' },
+  { id: 'd05', shortLabel: 'Sat 8/21', title: 'Sentosa / Universal', weather: 'Hot and humid', temperature: '32 C', caution: 'Medium' },
+  { id: 'd06', shortLabel: 'Sun 8/22', title: 'Zoo + Night Safari', weather: 'PM thundershowers', temperature: '30 C', caution: 'Medium' },
+  { id: 'd07', shortLabel: 'Mon 8/23', title: 'Chinatown + Maxwell', weather: 'Hot and humid', temperature: '32 C', caution: 'Low' },
+  { id: 'd08', shortLabel: 'Tue 8/24', title: 'Little India', weather: 'Partly cloudy', temperature: '31 C', caution: 'Low' },
+  { id: 'd09', shortLabel: 'Wed 8/25', title: 'Orchard + Botanic', weather: 'Humid, PM showers', temperature: '31 C', caution: 'Low' },
+  { id: 'd10', shortLabel: 'Thu 8/26', title: 'Southern Ridges', weather: 'Hot and humid', temperature: '32 C', caution: 'Medium' },
+  { id: 'd11', shortLabel: 'Fri 8/27', title: 'Jewel + buffer', weather: 'Partly cloudy', temperature: '31 C', caution: 'Low' },
+  { id: 'd12', shortLabel: 'Sat 8/28', title: 'Fly home', weather: 'Departure', temperature: 'n/a', caution: 'Low' },
 ]
 
 export const TIME_SLOTS = ['00', '06', '12', '18']

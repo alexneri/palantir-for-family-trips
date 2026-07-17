@@ -1411,7 +1411,7 @@ export default function CommandMap({
         const bounds = new google.maps.LatLngBounds()
         initialLocations.forEach((location) => bounds.extend(location.coordinates))
         const initialBasecampCenter =
-          initialLocations.find((location) => location.id === 'pine-airbnb')?.coordinates || { lat: 37.8586, lng: -120.2142 }
+          initialLocations.find((location) => location.id === 'pine-airbnb')?.coordinates || { lat: 1.283, lng: 103.8607 }
 
         const map = new google.maps.Map(containerRef.current, {
           center: initialBasecampCenter,
@@ -2671,7 +2671,7 @@ export default function CommandMap({
               )
             }) : (
               <div className="bg-[#0d1117]/92 px-4 py-4 text-[11px] text-[#8B949E]">
-                Waiting for basecamp and Yosemite weather feeds.
+                Waiting for the Singapore weather feed.
               </div>
             )}
           </div>

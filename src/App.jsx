@@ -216,47 +216,58 @@ const OBSOLETE_PLAN_ITINERARY_IDS = new Set([
 
 const DAY_BRIEFING_COPY = {
   thu: {
-    code: 'Insertion / Consolidation',
-    tone: 'Amber',
-    summary:
-      'Thursday is about getting everyone in cleanly. The main threat is staggered arrival timing, road fatigue, and losing momentum before basecamp is fully online. Win condition: all families reach Pine Mountain Lake, get through the gate, settle basecamp, and keep dinner simple enough that nobody burns out on night one.',
-    lookouts: [
-      'Protect arrival energy. Long-drive families should prioritize clean breaks over pushing nonstop.',
-      'Gate + check-in friction is the main avoidable failure point, so keep address, fee, and access details ready.',
-      'Do not over-schedule the evening. Dinner and reset are the operation.',
-    ],
-  },
-  fri: {
-    code: 'Basecamp / Local Ops',
+    code: 'City Ops',
     tone: 'Blue',
     summary:
-      'Friday is the stabilization day. Everyone is in theater, so the goal shifts from transit to rhythm: house setup, lake access, kid-friendly pacing, and preserving energy for the Yosemite push. Keep the day flexible and bias toward a low-friction, high-enjoyment tempo.',
+      'A Singapore city day. Heat and afternoon thundershowers are the main variables, so front-load outdoor plans, keep an aircon fallback nearby, and let the kid set the pace. Everything is MRT- or Grab-reachable from the Marina Bay basecamp.',
     lookouts: [
-      'Parking, beach timing, and family split-ups can create unnecessary overhead if not lightly coordinated.',
-      'Use this day to test house logistics, meal flow, and what each family actually needs before Saturday.',
-      'Avoid turning the lake day into a checklist marathon. The point is to settle in.',
+      'Midday sun is brutal. Bias outdoor plans to morning or evening and keep water on everyone.',
+      'Afternoon storms are common and short. Keep a mall, museum, or hawker centre as a rain fallback.',
+      'Distances are small but transfers add up. Batch nearby stops so the day is not all commuting.',
     ],
   },
-  sat: {
-    code: 'Yosemite Main Mission',
-    tone: 'Red',
+  d01: {
+    code: 'Departure',
+    tone: 'Amber',
     summary:
-      'Saturday is the primary excursion and the highest-complexity day of the trip. This is the longest operating window with the most movement, the most dependency on traffic and timing, and the highest risk of decision fatigue. Win condition: enter Yosemite smoothly, pick a manageable plan, and preserve enough margin for a calm return and cookout evening.',
+      'Travel day. The red-eye out of Amsterdam is the whole objective: bags, passports, and a clean airport run. Nothing to optimize on the ground yet beyond sleeping on the plane.',
     lookouts: [
-      'Departure discipline matters more than itinerary ambition. Late starts compound quickly on Yosemite day.',
-      'Pick a realistic park scope and protect turnaround timing before everyone gets tired.',
-      'This is the day to simplify decisions, not multiply them.',
+      'Passports valid 6+ months and boarding passes ready before leaving for Schiphol.',
+      'Pack tropical layers on top; Singapore is hot and wet on arrival.',
+      'Try to sleep on the flight to blunt the time shift.',
     ],
   },
-  sun: {
-    code: 'Exfil / Reset',
+  d02: {
+    code: 'Ingress',
+    tone: 'Amber',
+    summary:
+      'Arrival day. Land at Changi, clear immigration, grab an eSIM and a transit card, and get to the Marina Bay basecamp. Keep the first evening to a slow waterfront walk and an easy hawker dinner.',
+    lookouts: [
+      'File the SG Arrival Card within three days of arrival if it is not already done.',
+      'Grab an eSIM or Singtel tourist SIM plus an EZ-Link or SimplyGo card in the arrivals hall.',
+      'Do not over-plan night one. A gentle walk and dinner is the whole mission.',
+    ],
+  },
+  d03: {
+    code: 'Food Day',
     tone: 'Green',
     summary:
-      'Sunday is a controlled exit. The mission is not sightseeing, it is a clean departure: brunch, pack-out, house reset, and staggered family departures without chaos. The smoother the morning feels, the better the whole weekend lands in memory.',
+      'The food anchor. Easy daytime pacing near Marina Bay, then Makansutra Gluttons Bay by the Esplanade for the hawker spread: chili crab, satay, BBQ stingray, carrot cake, sugarcane juice.',
     lookouts: [
-      'Keep brunch simple and start pack-out early enough that checkout does not become the whole mood.',
-      'Assign quiet ownership for trash, fridge sweep, and final vehicle loading.',
-      'Avoid one-last-thing sprawl. The goal is a graceful exit, not extra complexity.',
+      'Gluttons Bay is dinner-only and open-air; check hours and arrive a little before peak.',
+      'Rain fallback: Lau Pa Sat satay street or Newton Food Centre both work.',
+      'Come hungry and split plates so everyone tries more.',
+    ],
+  },
+  d12: {
+    code: 'Exfil',
+    tone: 'Amber',
+    summary:
+      'Departure day. Controlled checkout, one last stop at Jewel Changi if there is time, then the flight home. Pre-packing on Aug 27 makes this morning calm instead of a scramble.',
+    lookouts: [
+      'Allow about three hours for Changi; Grab is easier than the MRT with luggage.',
+      'Jewel is pre-immigration, so it can be the final stop before check-in.',
+      'Confirm the flight and do a last sweep of the room for chargers and small items.',
     ],
   },
 }
