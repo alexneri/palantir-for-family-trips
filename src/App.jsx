@@ -36,6 +36,7 @@ import CommandMap from './CommandMap'
 import InspectorRail from './InspectorRail'
 import { PUBLISH_CONFIG, isLiveExternalDataEnabled } from './publishConfig'
 import { usePersistedTripState } from './usePersistedTripState'
+import { useSupabaseSync } from './useSupabaseSync'
 import { DAYS, NAV_ITEMS, TIME_SLOTS, TRIP_META } from './tripData'
 import {
   ENTITY_PAGE,
@@ -3881,6 +3882,7 @@ function withRefreshedFamilies(nextDoc) {
 function App() {
   const [doc, setDoc] = usePersistedTripState(TRIP_DOCUMENT_STORAGE_KEY, getInitialTripDocument())
   const [viewerProfile, setViewerProfile] = usePersistedTripState(VIEWER_PROFILE_STORAGE_KEY, { familyId: null })
+  useSupabaseSync(doc, setDoc)
   const visibilityMode = PUBLISH_CONFIG.visibilityMode
   const liveExternalData = isLiveExternalDataEnabled()
   const displayDoc = useMemo(() => projectTripDocument(doc, visibilityMode), [doc, visibilityMode])
