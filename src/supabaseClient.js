@@ -11,5 +11,7 @@ export const isSupabaseEnabled = Boolean(url && anonKey)
 export const TRIP_ID = import.meta.env.VITE_TRIP_ID || 'singapore-2027'
 
 export const supabase = isSupabaseEnabled
-  ? createClient(url, anonKey, { auth: { persistSession: false } })
+  ? createClient(url, anonKey, {
+      auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true },
+    })
   : null
